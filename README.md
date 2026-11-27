@@ -106,6 +106,16 @@ This course takes you through building 7 real-world AI agent projects, from simp
 - [Agentic RAG](https://github.com/emarco177/langgraph-course/tree/project/agentic-rag) - Advanced retrieval-augmented generation system
 
 
+### Check Python imports
+
+From the project root, run this command to check the imports in the Python files in that directory.
+
+```bash
+uv run --locked python -m unittest discover -s tests
+```
+
+GitHub Actions runs the same check on pushes and pull requests. The check loads each file as a module. Put code that starts a lesson under `if __name__ == "__main__":` so it runs when you start the script directly.
+
 ## 📚 Learning Objectives 
 
 By the end of this course, you'll be able to:
